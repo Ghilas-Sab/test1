@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Gallery from '../components/Gallery.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<BaseLayout
+  title="Ghilas Sabour — Étudiant Master Informatique"
+  description="Portfolio de Ghilas Sabour, étudiant en Master Informatique. Développeur web passionné, à la recherche d'une alternance."
+>
+  <Nav />
+  <main>
+    <Hero />
+    <About />
+    <Gallery />
+    <Projects />
+    <Contact />
+  </main>
+</BaseLayout>

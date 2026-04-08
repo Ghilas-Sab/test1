@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import profilePhoto from '../assets/photos/profile.jpg';
+---
+
+<section id="hero" class="min-h-screen flex items-center justify-center px-4 py-20 bg-white">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+
+    <!-- Photo de profil -->
+    <div class="flex-shrink-0">
+      <Image
+        src={profilePhoto}
+        alt="Photo de profil de Ghilas Sabour"
+        width={280}
+        height={280}
+        class="rounded-full object-cover w-48 h-48 md:w-64 md:h-64 ring-4 ring-blue-100"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Texte -->
+    <div class="text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+        Ghilas Sabour
+      </h1>
+      <p class="text-xl md:text-2xl text-blue-600 font-semibold mb-4">
+        Étudiant Master Informatique
+      </p>
+      <p class="text-gray-600 text-lg mb-8 max-w-md leading-relaxed">
+        Passionné par le développement web et les nouvelles technologies.
+        Je construis des solutions élégantes et performantes.
+        À la recherche d'une alternance pour continuer à progresser.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a
+          href="#contact"
+          class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        >
+          Me contacter
+        </a>
+        <a
+          href="#projects"
+          class="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:border-gray-400 hover:text-gray-900 transition-colors text-center focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+        >
+          Voir mes projets
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>

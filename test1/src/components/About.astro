@@ -1,0 +1,65 @@
+---
+const skills: Record<string, string[]> = {
+  'Langages': ['Python', 'JavaScript', 'TypeScript', 'Java', 'C', 'SQL'],
+  'Web & Frameworks': ['Astro', 'React', 'HTML/CSS', 'Tailwind CSS', 'Node.js'],
+  'Bases de données': ['PostgreSQL', 'MySQL', 'SQLite'],
+  'Outils & DevOps': ['Git', 'GitHub', 'Linux', 'VS Code', 'Netlify'],
+};
+---
+
+<section id="about" class="py-20 px-4 bg-gray-50">
+  <div class="max-w-5xl mx-auto">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+      À propos
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+      <!-- Biographie -->
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-5">Qui suis-je ?</h3>
+        <div class="space-y-4 text-gray-600 leading-relaxed">
+          <p>
+            Étudiant en Master Informatique (22 ans), je me passionne pour le développement
+            web et la création de solutions techniques soignées. Mon parcours m'a permis
+            d'acquérir une base solide en algorithmique, programmation orientée objet et
+            développement web moderne.
+          </p>
+          <p>
+            J'aime construire des projets du début à la fin — de la conception à l'hébergement.
+            Ce portfolio en est la preuve directe : développé avec Astro et Tailwind CSS,
+            déployé sur Netlify, sans template générique.
+          </p>
+          <p>
+            Je cherche une alternance pour mettre mes compétences au service d'une équipe
+            dynamique, apprendre auprès de professionnels expérimentés et contribuer à
+            des projets concrets et ambitieux.
+          </p>
+        </div>
+      </div>
+
+      <!-- Compétences -->
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-5">Compétences</h3>
+        <div class="space-y-5">
+          {Object.entries(skills).map(([category, items]) => (
+            <div>
+              <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">
+                {category}
+              </h4>
+              <div class="flex flex-wrap gap-2">
+                {items.map((skill) => (
+                  <span class="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm text-gray-700 font-medium shadow-sm">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

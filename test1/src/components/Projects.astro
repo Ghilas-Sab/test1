@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+import ProjectCard from './ProjectCard.astro';
+
+const allProjects = await getCollection('projects');
+const sortedProjects = allProjects.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<section id="projects" class="py-20 px-4 bg-gray-50">
+  <div class="max-w-5xl mx-auto">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+      Mes Projets
+    </h2>
+    <p class="text-gray-500 text-center mb-12">
+      Réalisations techniques avec détails et liens GitHub
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {sortedProjects.map((project) => (
+        <ProjectCard
+          title={project.data.title}
+          description={project.data.description}
+          technologies={project.data.technologies}
+          githubUrl={project.data.githubUrl}
+          date={project.data.date}
+        />
+      ))}
+    </div>
+
+  </div>
+</section>
