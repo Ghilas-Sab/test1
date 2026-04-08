@@ -1,0 +1,61 @@
+# generated: 2026-04-08
+# last_updated: 2026-04-08
+# project: Test1
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: /home/etud/Bureau/Test1/_bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+
+generated: 2026-04-08
+last_updated: 2026-04-08
+project: Test1
+project_key: NOKEY
+tracking_system: file-system
+story_location: /home/etud/Bureau/Test1/_bmad-output/implementation-artifacts
+
+development_status:
+  # Epic 1: Fondations & Deploiement
+  epic-1: in-progress
+  1-1-initialisation-du-projet-astro-tailwind: review
+  1-2-layout-de-base-et-configuration-seo: review
+  1-3-deploiement-netlify-avec-cicd: review
+  epic-1-retrospective: optional
+
+  # Epic 2: Presentation Personnelle
+  epic-2: in-progress
+  2-1-navigation-sticky-avec-ancres: review
+  2-2-section-hero: review
+  2-3-section-a-propos: review
+  epic-2-retrospective: optional
+
+  # Epic 3: Portfolio (Galerie & Projets)
+  epic-3: in-progress
+  3-1-configuration-des-content-collections: review
+  3-2-section-galerie-avec-lightbox: review
+  3-3-section-projets: review
+  epic-3-retrospective: optional
+
+  # Epic 4: Contact, Accessibilite & Performance
+  epic-4: in-progress
+  4-1-section-contact-avec-formulaire-netlify: review
+  4-2-page-de-confirmation-denvoi: review
+  4-3-audit-accessibilite-aa-et-corrections: review
+  4-4-optimisation-performance-finale: review
+  epic-4-retrospective: optional
